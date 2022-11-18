@@ -1,0 +1,22 @@
+header,
+main,
+footer {
+  /* colocar uma largura fixa */
+  width: 80%;
+  margin: 0 auto;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.presentation {
+  border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+.presentation h1 {
+  font-size: 3rem;
+}
