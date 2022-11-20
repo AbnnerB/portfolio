@@ -1,21 +1,14 @@
-import {} from "react-icons";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import HeaderFooter from "../../Components/HeaderFooter";
 
 import "./styles.css";
 
 export default function Home() {
   return (
     <div>
-      <header>
-        <span>abnnerborges</span>
-        <nav>
-          <FaGithub />
-          <FaLinkedin />
-        </nav>
-      </header>
+      <HeaderFooter />
       <main>
         <section className="presentation">
-          <div>
+          <div className="presentationContent">
             <h1>
               Nice to meet you! <br /> I'm Abnner Borges
             </h1>
@@ -24,7 +17,14 @@ export default function Home() {
               Architecto, modi. Alias voluptatum recusandae perferendis. Ipsa
               quibusdam odit fugiat a nam?
             </p>
+
+            <span>Contact me</span>
           </div>
+          <img
+            className="imgRetrato"
+            src="assets/imagePresentation.jpg"
+            alt="imagemRetrato"
+          />
         </section>
         <section className="languages">
           <h3>HTML</h3>
@@ -53,13 +53,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer>
-        <span>abnnerborges</span>
-        <nav>
-          <FaGithub />
-          <FaLinkedin />
-        </nav>
-      </footer>
+      <HeaderFooter />
     </div>
   );
 }
