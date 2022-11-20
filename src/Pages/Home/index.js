@@ -1,6 +1,16 @@
 import HeaderFooter from "../../Components/HeaderFooter";
+import ProjectCard from "../../Components/ProjectCard";
 
 import "./styles.css";
+
+//site usado como referencia https://www.frontendmentor.io/challenges/singlepage-developer-portfolio-bBVj2ZPi-x
+
+//comentei a area contato pq eu não sei se quero ela na pagina
+
+//Pensando se eu crio uma seção sobre mim/ seção sobre
+
+//dia 20/11/22 to pensando em encerrar o projeto por aqui/ por enquanto
+//Pretendo fazer mais projetos para conseguir trabalhar a parte dinamica
 
 export default function Home() {
   return (
@@ -32,13 +42,19 @@ export default function Home() {
           <h3>Javascript</h3>
           <h3>React</h3>
         </section>
-        <section className="projects">
-          <div>
-            <img src="" alt="projeto22" />
-          </div>
+        <section>
+          <h3>Projects</h3>
+          <section className="projects">
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+          </section>
         </section>
-        <section className="contact">
-          <div>
+      </main>
+      <footer className="containerContact">
+        {/* <section className="contact">
+          <div className="contactContent">
             <h3>Contact</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
@@ -51,8 +67,8 @@ export default function Home() {
             <div className="email">abnner email</div>
             <div className="linkedin">abnner linkedin</div>
           </div>
-        </section>
-      </main>
+        </section> */}
+      </footer>
       <HeaderFooter />
     </div>
   );

@@ -41,7 +41,7 @@ main {
   width: 400px;
   position: absolute;
   right: 0;
-  top: -7.3rem;
+  top: -8.5rem;
   z-index: -1;
 }
 
@@ -51,4 +51,54 @@ main {
   margin-top: 3rem;
   display: flex;
   gap: 8rem;
+  animation: movemove 20s infinite ease-in-out;
 }
+
+@keyframes movemove {
+  from {
+    transform: translate(-80%);
+  }
+  to {
+    transform: translate(120%);
+  }
+}
+/* end language section */
+.projects {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* gap: 1rem; */
+  margin: 2rem 0;
+}
+
+.projectCard {
+  min-width: 300px;
+  width: 49%;
+  margin-bottom: 2rem;
+}
+
+.projects div img {
+  width: 100%;
+}
+
+/* end projects section */
+
+/* .containerContact {
+  background-color: rgb(34, 34, 34);
+}
+.contact {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 4rem;
+  display: flex;
+  border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+.contactContent h3 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+.containerContact p {
+  font-weight: 300;
+  width: 40%;
+} */
