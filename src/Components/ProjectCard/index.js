@@ -1,9 +1,9 @@
-export default function ProjectCard() {
+export default function ProjectCard({ item }) {
   return (
     <div className="projectCard">
-      <img src="assets/spaceTourism.png" alt="projeto22" />
-      <h3>Nome do Projeto</h3>
-      <span>Tecnologias usadas</span>
+      <img src={item.src1} alt="projeto22" />
+      <h3>{item.name}</h3>
+      <span>{item.technologiesUsed}</span>
     </div>
   );
 }

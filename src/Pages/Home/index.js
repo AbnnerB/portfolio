@@ -45,21 +45,17 @@ export default function Home() {
         </section>
         <section>
           <h3>Projects</h3>
+
           <section className="projects">
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
-            <ProjectCard />
+            {InfoProjects.map((item, index) => (
+              <div key={index}>
+                <ProjectCard item={item} />
+              </div>
+            ))}
           </section>
         </section>
       </main>
       <footer className="containerContact">
-        {InfoProjects.map((item, index) => (
-          <div key={index}>
-            <p>{item.name}</p>
-          </div>
-        ))}
-
         {/* <section className="contact">
           <div className="contactContent">
             <h3>Contact</h3>
