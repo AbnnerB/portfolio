@@ -1,5 +1,6 @@
 import HeaderFooter from "../../Components/HeaderFooter";
 import ProjectCard from "../../Components/ProjectCard";
+import InfoProjects from "../../Data/InfoProjects";
 
 import "./styles.css";
 
@@ -53,6 +54,12 @@ export default function Home() {
         </section>
       </main>
       <footer className="containerContact">
+        {InfoProjects.map((item, index) => (
+          <div key={index}>
+            <p>{item.name}</p>
+          </div>
+        ))}
+
         {/* <section className="contact">
           <div className="contactContent">
             <h3>Contact</h3>
