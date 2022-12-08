@@ -50,18 +50,10 @@ main {
 .languages {
   margin-top: 3rem;
   display: flex;
-  gap: 8rem;
-  animation: movemove 20s infinite ease-in-out;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-@keyframes movemove {
-  from {
-    transform: translate(-80%);
-  }
-  to {
-    transform: translate(120%);
-  }
-}
 /* end language section */
 .projects {
   display: flex;
