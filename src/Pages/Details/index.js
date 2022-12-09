@@ -1,3 +1,5 @@
+import "./styles.css";
+
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
@@ -8,28 +10,22 @@ export default function Details() {
 
   const [infoArray, setInfoArray] = useState([]);
 
-  console.log(id);
+  useEffect(() => {
+    let filteredArray = InfoProjects.filter((item) => item.id === id);
 
-  let filteredArray = InfoProjects.filter((item) => item.id === id);
-
-  // console.log(infoNewArray);
-
-  // console.log(" /////////////// ");
-
-  // console.log(infoArray);
-
-  //  video: 1:02:00 hora de codar
+    setInfoArray(filteredArray);
+  }, [id]);
 
   return (
     <div>
-      {/* <h1>{InfoProjects.name}</h1> */}
-      {/* {InfoProjects.id === id &&
-        InfoProjects.map((item) => (
-          <div key={item}>
-            <p>{item.name}</p>
-          </div>
-        ))} */}
-      <h1>Balaco baco</h1>
+      {infoArray.map((item) => (
+        <div key={item.id}>
+          <p>{item.name}</p>
+          <img src={"../" + item.src1} alt="{item.name} " />
+        </div>
+      ))}
     </div>
   );
 }
+
+/* <img src="../assets/spaceTourism1.png" alt="{item.name} " /> */
