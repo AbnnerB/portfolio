@@ -1,6 +1,6 @@
 main {
   /* colocar uma largura fixa */
-  width: 80%;
+  width: 1012px;
   margin: 0 auto;
 }
 
@@ -56,23 +56,56 @@ main {
 
 /* end language section */
 .projects {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  /* gap: 1rem; */
+  margin-top: 2rem;
+}
+
+.containerProjects {
   margin: 2rem 0;
+  position: relative;
+}
+.containerProjects button {
+  position: absolute;
+  height: 69%;
+  background-color: rgba(0, 0, 0, 0.356);
+  padding: 0 0.2rem;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.containerProjects button:first-child {
+  position: absolute;
+  right: 0px;
+}
+.containerProjects button svg {
+  transition: all 0.5s;
+}
+
+.containerProjects button svg:hover {
+  transform: scale(1.4);
+}
+
+.carousel {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
 }
 
 .projectCard {
   min-width: 300px;
-  width: 49%;
+  max-width: 50%;
   margin-bottom: 2rem;
+  pointer-events: fill;
 }
 
-.projects div img {
+.projectCard img {
   width: 100%;
 }
-
 /* end projects section */
 
 /* .containerContact {

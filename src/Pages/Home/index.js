@@ -1,8 +1,12 @@
+import { useRef } from "react";
+
 import HeaderFooter from "../../Components/HeaderFooter";
 import ProjectCard from "../../Components/ProjectCard";
 import InfoProjects from "../../Data/InfoProjects";
 
 import "./styles.css";
+
+import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 
 //site usado como referencia https://www.frontendmentor.io/challenges/singlepage-developer-portfolio-bBVj2ZPi-x
 
@@ -14,6 +18,17 @@ import "./styles.css";
 //Pretendo fazer mais projetos para conseguir trabalhar a parte dinamica
 
 export default function Home() {
+  const carousel = useRef(null);
+
+  function carouselScrollLeft() {
+    console.log(carousel.current);
+    carousel.current.scrollLeft -= carousel.current.offsetWidth;
+  }
+  function carouselScrollRight() {
+    console.log(carousel.current.offsetWidth);
+    carousel.current.scrollLeft += carousel.current.offsetWidth;
+  }
+
   return (
     <div>
       <HeaderFooter />
@@ -43,15 +58,23 @@ export default function Home() {
           <h3>Javascript</h3>
           <h3>React</h3>
         </section>
-        <section>
+        <section className="projects">
           <h3>Projects</h3>
 
-          <section className="projects">
-            {InfoProjects.map((item, index) => (
-              <div key={index}>
-                <ProjectCard item={item} />
-              </div>
-            ))}
+          <section className="containerProjects">
+            <button onClick={carouselScrollRight}>
+              <FaAngleRight />
+            </button>
+            <button onClick={carouselScrollLeft}>
+              <FaAngleLeft />
+            </button>
+            <div className="carousel" ref={carousel}>
+              {InfoProjects.map((item, index) => (
+                <div key={index}>
+                  <ProjectCard item={item} />
+                </div>
+              ))}
+            </div>
           </section>
         </section>
       </main>
