@@ -70,9 +70,7 @@ export default function Home() {
             </button>
             <div className="carousel" ref={carousel}>
               {InfoProjects.map((item, index) => (
-                <div key={index}>
-                  <ProjectCard item={item} />
-                </div>
+                <ProjectCard key={item.id} item={item} />
               ))}
             </div>
           </section>
