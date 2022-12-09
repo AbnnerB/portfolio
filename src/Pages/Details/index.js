@@ -1,7 +1,12 @@
 import "./styles.css";
 
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+
+//import { IconName } from "react-icons/fa";
+//FaChalkboard
+//FaLaptop
+//FaMobileAlt
 
 import InfoProjects from "../../Data/InfoProjects";
 
@@ -17,14 +22,19 @@ export default function Details() {
   }, [id]);
 
   return (
-    <div>
+    <>
       {infoArray.map((item) => (
-        <div key={item.id}>
-          <p>{item.name}</p>
+        <div key={item.id} className="PageDetail">
+          <Link to="/">Voltar</Link>
+          <h1>{item.name}</h1>
           <img src={"../" + item.src1} alt="{item.name} " />
+          <span>{item.technologiesUsed}</span>
+          <a href={item.linkVercel} target="_blank" rel="noreferrer">
+            Veja no site
+          </a>
         </div>
       ))}
-    </div>
+    </>
   );
 }
 
