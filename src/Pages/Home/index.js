@@ -35,7 +35,7 @@ export default function Home() {
         <section className="presentation">
           <div className="presentationContent">
             <h1>
-              Nice to meet you! <br /> I'm Abnner Borges
+              Seja Bem-vindo! <br /> Eu sou o Abnner Borges
             </h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -45,11 +45,14 @@ export default function Home() {
 
             {/* <span>Contact me</span> */}
           </div>
-          <img
-            className="imgRetrato"
-            src="assets/imagePresentation.jpg"
-            alt="imagemRetrato"
-          />
+          <div>
+            <span className="myNameDivImg">abnnerborges</span>
+            <img
+              className="imgRetrato"
+              src="assets/eu.png"
+              alt="imagemRetrato"
+            />
+          </div>
         </section>
         <section className="languages">
           <h3>HTML</h3>
@@ -68,7 +71,7 @@ export default function Home() {
               <FaAngleLeft />
             </button>
             <div className="carousel" ref={carousel}>
-              {InfoProjects.map((item, index) => (
+              {InfoProjects.map((item) => (
                 <ProjectCard key={item.id} item={item} />
               ))}
             </div>
