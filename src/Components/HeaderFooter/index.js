@@ -8,8 +8,22 @@ export default function HeaderFooter() {
     <header>
       <span>abnnerborges</span>
       <nav>
-        <FaGithub />
-        <FaLinkedin />
+        <a
+          href="https://github.com/AbnnerB"
+          target="_blank"
+          className="githubIcon"
+          rel="noreferrer"
+        >
+          <FaGithub />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/abnner-borges-05a631255/"
+          target="_blank"
+          rel="noreferrer"
+          className="linkedinIcon"
+        >
+          <FaLinkedin />
+        </a>
       </nav>
     </header>
   );

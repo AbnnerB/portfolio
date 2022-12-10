@@ -71,7 +71,7 @@ main {
 }
 .containerProjects button {
   position: absolute;
-  height: 69%;
+  height: 82.3%;
   background-color: rgba(0, 0, 0, 0.356);
   padding: 0 0.2rem;
   border: none;
@@ -94,7 +94,7 @@ main {
 
 .carousel {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.7rem;
   overflow-x: auto;
   scroll-behavior: smooth;
 }
@@ -156,5 +156,11 @@ main {
   .imgRetrato {
     margin-top: 0.5rem;
     max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .containerProjects button {
+    display: none;
   }
 }

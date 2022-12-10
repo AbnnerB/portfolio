@@ -61,7 +61,7 @@ export default function Home() {
           <h3>React</h3>
         </section>
         <section className="projects">
-          <h3>Projects</h3>
+          <h3>Projetos</h3>
 
           <section className="containerProjects">
             <button onClick={carouselScrollRight}>
