@@ -31,7 +31,6 @@ export default function Home() {
 
   return (
     <div>
-      <HeaderFooter />
       <main>
         <section className="presentation">
           <div className="presentationContent">

@@ -28,7 +28,10 @@ export default function Details() {
           <Link to="/">Voltar</Link>
           <h1>{item.name}</h1>
           <img src={"../" + item.src1} alt="{item.name} " />
-          <span>{item.technologiesUsed}</span>
+          <span>
+            Tecnologias utilizadas para desenvolvimento do Projeto:{" "}
+            {item.technologiesUsed}
+          </span>
           <a href={item.linkVercel} target="_blank" rel="noreferrer">
             Veja no site
           </a>
