@@ -32,6 +32,8 @@ export default function Details() {
             Tecnologias utilizadas para desenvolvimento do Projeto:{" "}
             {item.technologiesUsed}
           </span>
+          <p>{item.moreInfo}</p>
+
           <a href={item.linkVercel} target="_blank" rel="noreferrer">
             Veja no site
           </a>
