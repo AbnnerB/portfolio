@@ -5,7 +5,7 @@ export default function ProjectCard({ item }) {
     <div className="projectCard">
       <img src={item.src1} alt="projeto22" />
       <h3>{item.name}</h3>
-      <span>{item.technologiesUsed}</span>
+      {/* <span>{item.technologiesUsed}</span> */}
       <Link to={`/details/${item.id}`}>Detalhes</Link>
     </div>
   );

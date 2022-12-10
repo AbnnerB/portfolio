@@ -3,7 +3,7 @@ header {
   justify-content: space-between;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  width: 1012px;
+  max-width: 1012px;
   margin: 0 auto;
   padding: 1rem 0;
 }

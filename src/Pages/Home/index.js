@@ -43,7 +43,7 @@ export default function Home() {
               quibusdam odit fugiat a nam?
             </p>
 
-            <span>Contact me</span>
+            {/* <span>Contact me</span> */}
           </div>
           <img
             className="imgRetrato"
@@ -75,24 +75,9 @@ export default function Home() {
           </section>
         </section>
       </main>
-      <footer className="containerContact">
-        {/* <section className="contact">
-          <div className="contactContent">
-            <h3>Contact</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              ratione et quos aut quidem voluptatem excepturi soluta dolorem
-              aspernatur nihil.
-            </p>
-          </div>
-          <div>
-            <div className="name">abnner</div>
-            <div className="email">abnner email</div>
-            <div className="linkedin">abnner linkedin</div>
-          </div>
-        </section> */}
+      <footer>
+        <HeaderFooter />
       </footer>
-      <HeaderFooter />
     </div>
   );
 }
