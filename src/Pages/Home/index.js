@@ -35,12 +35,11 @@ export default function Home() {
         <section className="presentation">
           <div className="presentationContent">
             <h1>
-              Seja Bem-vindo! <br /> Eu sou o Abnner Borges
+              Seja Bem-vindo! <br /> Eu sou o Abnner Borges.
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto, modi. Alias voluptatum recusandae perferendis. Ipsa
-              quibusdam odit fugiat a nam?
+              Bom o meu nome você já sabe, então da uma olhada na seção SOBRE e
+              eu vou te contar um pouco da minha história.
             </p>
 
             {/* <span>Contact me</span> */}
@@ -54,12 +53,35 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className="languages">
+        {/* <section className="languages">
           <h3>HTML</h3>
           <h3>CSS</h3>
           <h3>Javascript</h3>
           <h3>React</h3>
+        </section> */}
+
+        <section className="aboutMe">
+          <h2>Sobre</h2>
+          <p>
+            Em 2022 iniciei os meus estudos na área da programação e desde o meu
+            primeiro "Hello World" sou um apaixonado por esse mundo de infinitas
+            possibilidades.
+          </p>
+          <p>
+            Especificamente na area do Front-end, onde iniciei os meus estudos
+            em HTML, CSS, JS e React-JS que sigo estudando até os dias de hoje.
+          </p>
+          <p>
+            Apesar da pouca experiencia me facino a cada desafio, sempre
+            buscando aprender e contribuir gerando valor aos usuario que
+            usufruem dos meus projetos.
+          </p>
+          <p>
+            Inclusive dá uma olhada nos projetos abaixo e se possivel me envie
+            um feedback no meu LinkedIn.
+          </p>
         </section>
+
         <section className="projects">
           <h3>Projetos</h3>
 
