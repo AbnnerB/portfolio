@@ -5,7 +5,6 @@
 
 .PageDetail img {
   width: 100%;
-  /* border-radius: 10px; */
 }
 
 .PageDetail h1 {
@@ -17,16 +16,20 @@
   line-height: 1.3rem;
 }
 
-.comeBack {
+.linksDetails {
   display: block;
   margin-top: 1rem;
   color: white;
   text-decoration-color: #0fff50;
 }
 
+.linksDetails:last-of-type {
+  margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 815px) {
   .PageDetail p,
-  .PageDetail .comeBack {
+  .PageDetail .linksDetails {
     margin: 1rem;
   }
 }

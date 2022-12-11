@@ -3,11 +3,6 @@ import "./styles.css";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
-//import { IconName } from "react-icons/fa";
-//FaChalkboard
-//FaLaptop
-//FaMobileAlt
-
 import InfoProjects from "../../Data/InfoProjects";
 import HeaderFooter from "../../Components/HeaderFooter";
 
@@ -37,7 +32,7 @@ export default function Details() {
           <p>{item.moreInfo}</p>
 
           <a
-            className="comeBack"
+            className="linksDetails"
             href={item.linkVercel}
             target="_blank"
             rel="noreferrer"
@@ -45,7 +40,7 @@ export default function Details() {
             Veja no site
           </a>
 
-          <Link className="comeBack" to="/">
+          <Link className="linksDetails" to="/">
             Voltar
           </Link>
         </div>
@@ -53,5 +48,3 @@ export default function Details() {
     </>
   );
 }
-
-/* <img src="../assets/spaceTourism1.png" alt="{item.name} " /> */
