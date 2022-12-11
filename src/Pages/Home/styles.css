@@ -176,7 +176,7 @@ main {
     font-size: 3rem;
   }
   .aboutMe {
-    margin: 2rem;
+    margin: 2rem 1.5rem;
   }
   .projects h3 {
     text-align: center;
@@ -224,5 +224,8 @@ main {
 @media screen and (max-width: 500px) {
   .containerProjects button {
     display: none;
+  }
+  .aboutMe p:last-of-type {
+    width: 90%;
   }
 }
