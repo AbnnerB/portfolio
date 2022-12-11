@@ -25,7 +25,6 @@ export default function Details() {
     <>
       {infoArray.map((item) => (
         <div key={item.id} className="PageDetail">
-          <Link to="/">Voltar</Link>
           <h1>{item.name}</h1>
           <img src={"../" + item.src1} alt="{item.name} " />
           <span>
@@ -34,9 +33,18 @@ export default function Details() {
           </span>
           <p>{item.moreInfo}</p>
 
-          <a href={item.linkVercel} target="_blank" rel="noreferrer">
+          <a
+            className="linkSections"
+            href={item.linkVercel}
+            target="_blank"
+            rel="noreferrer"
+          >
             Veja no site
           </a>
+
+          <Link className="comeBack" to="/">
+            Voltar
+          </Link>
         </div>
       ))}
     </>
