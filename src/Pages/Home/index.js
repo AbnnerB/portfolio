@@ -90,7 +90,7 @@ export default function Home() {
             >
               LinkedIn
             </a>
-            .
+            .😃
           </p>
         </section>
 
