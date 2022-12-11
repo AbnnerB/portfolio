@@ -38,8 +38,11 @@ export default function Home() {
               Seja Bem-vindo! <br /> Eu sou o Abnner Borges.
             </h1>
             <p>
-              Bom o meu nome você já sabe, então da uma olhada na seção SOBRE e
-              eu vou te contar um pouco da minha história.
+              Bom o meu nome você já sabe, então da uma olhada na seção{" "}
+              <a className="linkSections" href="#about">
+                SOBRE
+              </a>{" "}
+              e eu vou te contar um pouco da minha história.
             </p>
 
             {/* <span>Contact me</span> */}
@@ -60,7 +63,7 @@ export default function Home() {
           <h3>React</h3>
         </section> */}
 
-        <section className="aboutMe">
+        <section className="aboutMe" id="about">
           <h2>Sobre</h2>
           <p>
             Em 2022 iniciei os meus estudos na área da programação e desde o meu
@@ -69,16 +72,25 @@ export default function Home() {
           </p>
           <p>
             Especificamente na area do Front-end, onde iniciei os meus estudos
-            em HTML, CSS, JS e React-JS que sigo estudando até os dias de hoje.
+            em HTML, CSS, JS e React-JS, que sigo estudando até os dias de hoje.
           </p>
           <p>
             Apesar da pouca experiencia me facino a cada desafio, sempre
-            buscando aprender e contribuir gerando valor aos usuario que
+            buscando aprender e contribuir, gerando valor aos usuarios que
             usufruem dos meus projetos.
           </p>
           <p>
-            Inclusive dá uma olhada nos projetos abaixo e se possivel me envie
-            um feedback no meu LinkedIn.
+            Inclusive acesse os projetos abaixo e se possivel me envie um
+            feedback no{" "}
+            <a
+              // className="linkSections"
+              href="https://www.linkedin.com/in/abnner-borges-05a631255/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+            .
           </p>
         </section>
 
