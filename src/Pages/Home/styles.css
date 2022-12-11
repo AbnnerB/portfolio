@@ -187,6 +187,9 @@ main {
   .presentationContent h1 {
     font-size: 2.2rem;
   }
+  .containerProjects button {
+    display: none;
+  }
 }
 @media screen and (max-width: 720px) {
   .presentation {
@@ -222,9 +225,6 @@ main {
 }
 
 @media screen and (max-width: 500px) {
-  .containerProjects button {
-    display: none;
-  }
   .aboutMe p:last-of-type {
     width: 90%;
   }

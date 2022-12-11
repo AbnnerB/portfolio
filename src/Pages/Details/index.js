@@ -9,6 +9,7 @@ import { Link, useParams } from "react-router-dom";
 //FaMobileAlt
 
 import InfoProjects from "../../Data/InfoProjects";
+import HeaderFooter from "../../Components/HeaderFooter";
 
 export default function Details() {
   const { id } = useParams();
@@ -25,16 +26,18 @@ export default function Details() {
     <>
       {infoArray.map((item) => (
         <div key={item.id} className="PageDetail">
-          <h1>{item.name}</h1>
+          <HeaderFooter />
+
           <img src={"../" + item.src1} alt="{item.name} " />
-          <span>
+          <h1>{item.name}</h1>
+          <p>
             Tecnologias utilizadas para desenvolvimento do Projeto:{" "}
             {item.technologiesUsed}
-          </span>
+          </p>
           <p>{item.moreInfo}</p>
 
           <a
-            className="linkSections"
+            className="comeBack"
             href={item.linkVercel}
             target="_blank"
             rel="noreferrer"
