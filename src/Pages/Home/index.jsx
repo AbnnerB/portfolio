@@ -9,6 +9,7 @@ import "./styles.css";
 import { FaAngleRight, FaAngleLeft, FaUnderline } from "react-icons/fa";
 
 import TypeWriterEffect from "react-typewriter-effect";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Home() {
   const dataTop5 = InfoProjects.slice(0, 5);
@@ -22,6 +23,11 @@ export default function Home() {
   function carouselScrollRight() {
     console.log(carousel.current.offsetWidth);
     carousel.current.scrollLeft += carousel.current.offsetWidth;
+  }
+  const navigate = useNavigate();
+
+  function linkForProjects() {
+    navigate("/allprojects");
   }
 
   return (
@@ -100,10 +106,19 @@ export default function Home() {
             {dataTop5.map((item) => (
               <ProjectCard key={item.id} item={item} />
             ))}
-            <button className="seeMoreProjectsButton">
+            <button
+              onClick={linkForProjects}
+              className="seeMoreProjectsButton in"
+            >
               <span> Ver mais Projetos ...</span>
             </button>
           </section>
+          <button
+            onClick={linkForProjects}
+            className="seeMoreProjectsButton out"
+          >
+            <span> Ver mais Projetos ...</span>
+          </button>
         </section>
       </main>
       <footer>

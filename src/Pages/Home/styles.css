@@ -192,6 +192,11 @@ main {
   filter: blur(5px);
   animation: borderAnimation 4s linear infinite;
 }
+
+.out {
+  display: none;
+}
+
 @keyframes borderAnimation {
   0% {
     transform: rotate(0deg);
@@ -238,6 +243,12 @@ main {
   .containerProjects button {
     display: none;
   }
+  .out {
+    display: block;
+  }
+  .in {
+    display: none;
+  }
 }
 @media screen and (max-width: 720px) {
   .presentation {
@@ -269,6 +280,10 @@ main {
     margin-top: 0.5rem;
     max-width: 200px;
   }
+
+  .containerProjects {
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -279,5 +294,18 @@ main {
     word-spacing: 0.6rem;
     width: 90%;
     margin: 0 auto 1rem auto;
+  }
+
+  .containerProjects {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectCard {
+    min-width: 100px;
+    max-width: 100%;
+    width: 90%;
+    margin-bottom: 2rem;
+    pointer-events: fill;
   }
 }

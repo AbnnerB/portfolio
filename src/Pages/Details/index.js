@@ -39,10 +39,6 @@ export default function Details() {
           >
             Veja no site
           </a>
-
-          <Link className="linksDetails" to="/">
-            Voltar
-          </Link>
         </div>
       ))}
     </>
