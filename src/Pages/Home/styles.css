@@ -7,6 +7,8 @@ main {
   border-bottom: 1px solid rgb(223, 223, 223);
   position: relative;
   display: flex;
+  /* justify-content: space-between; */
+  gap: 2.5rem;
 }
 
 .presentationContent {
@@ -169,44 +171,49 @@ main {
 .seeMoreProjectsButton {
   margin: 0rem auto 1rem auto;
   width: 200px;
-  padding: 0.6rem 1rem;
-  border-radius: 20px;
-  /* border: 1px solid white; */
-  /* border: 4px solid #0fff50; */
-  /* border-top: 3px solid #0fff50;
-  border-right: 3px solid #0fff50;
-  border-bottom: 3px solid #0fff50;
-  border-left: 3px solid #0fff50; */
-
-  background-color: rgb(223, 223, 223);
-  /* box-shadow: 2px 2px 5px #0fff50; */
+  padding: 1rem;
+  border-radius: 25px;
+  background-color: #0fff4f27;
   font-size: 1rem;
   cursor: pointer;
-  animation: colorButton 5s ease-in-out infinite;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  box-shadow: 1px 1px 10px #0fff50;
 }
 
-.seeMoreProjectsButton:active {
-  box-shadow: 1px 1px 2px #0fff50;
+.seeMoreProjectsButton::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  width: 230px;
+  height: 25px;
+  background-color: #0fff50;
+  filter: blur(5px);
+  animation: borderAnimation 4s linear infinite;
 }
-
-@keyframes colorButton {
+@keyframes borderAnimation {
   0% {
-    border-top: 3px solid #0fff50;
-    box-shadow: -4px 2px 6px #0fff50;
-  }
-
-  25% {
-    border-right: 3px solid #0fff50;
-    box-shadow: 2px 4px 6px #0fff50;
-  }
-  50% {
-    border-right: 3px solid #0fff50;
-    box-shadow: -2px 4px 6px #0fff50;
+    transform: rotate(0deg);
   }
   100% {
-    border-bottom: 3px solid #0fff50;
-    box-shadow: -4px -4px 6px #0fff50;
+    transform: rotate(360deg);
   }
+}
+
+.seeMoreProjectsButton::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background: #333;
+  border-radius: 25px;
+}
+
+.seeMoreProjectsButton span {
+  position: relative;
+  color: #fff;
+  font-size: 1rem;
+  z-index: 3;
 }
 
 @media screen and (max-width: 900px) {
@@ -271,6 +278,6 @@ main {
   .presentationContent h1 {
     word-spacing: 0.6rem;
     width: 90%;
-    margin: 1rem auto;
+    margin: 0 auto 1rem auto;
   }
 }

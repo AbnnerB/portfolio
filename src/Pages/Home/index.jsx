@@ -31,9 +31,9 @@ export default function Home() {
           <div className="presentationContent">
             <h1>
               <TypeWriterEffect
-                startDelay={1500}
+                startDelay={500}
                 cursorColor="rgb(22, 22, 22)"
-                text="Seja Bem-vindo!, Eu Sou o Abnner Borges."
+                text="Seja Bem-vindo! Eu Sou o Abnner Borges."
                 typeSpeed={110}
                 eraseSpeed={100}
               />
@@ -100,10 +100,10 @@ export default function Home() {
             {dataTop5.map((item) => (
               <ProjectCard key={item.id} item={item} />
             ))}
+            <button className="seeMoreProjectsButton">
+              <span> Ver mais Projetos ...</span>
+            </button>
           </section>
-          <button className="seeMoreProjectsButton">
-            Ver mais Projetos ...
-          </button>
         </section>
       </main>
       <footer>
