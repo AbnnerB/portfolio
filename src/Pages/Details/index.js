@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
 import InfoProjects from "../../Data/InfoProjects";
-import HeaderFooter from "../../Components/HeaderFooter";
+import Footer from "../../Components/Footer";
 
 export default function Details() {
   const { id } = useParams();
@@ -21,7 +21,7 @@ export default function Details() {
     <>
       {infoArray.map((item) => (
         <div key={item.id} className="PageDetail">
-          <HeaderFooter />
+          <Footer />
 
           <img src={"../" + item.src1} alt="{item.name} " />
           <h1>{item.name}</h1>

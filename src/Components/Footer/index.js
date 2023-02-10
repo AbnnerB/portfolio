@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 import "./styles.css";
 
-export default function HeaderFooter() {
+export default function Footer() {
   return (
     <header>
       <span>abnnerBorges</span>

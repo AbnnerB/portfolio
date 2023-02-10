@@ -65,6 +65,7 @@ main {
 
 .aboutMe p {
   font-size: 1.1rem;
+  line-height: 25px;
   text-align: justify;
 }
 
@@ -98,7 +99,7 @@ main {
   font-size: 2rem;
 }
 
-.containerProjects {
+/* .containerProjects {
   margin: 2rem 0;
   position: relative;
 }
@@ -133,6 +134,14 @@ main {
 }
 .carousel::-webkit-scrollbar {
   display: none;
+} */
+
+.containerProjects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 1.5rem;
+  justify-content: space-between;
+  /* background-color: #0fff50; */
 }
 
 .projectCard {
@@ -204,5 +213,10 @@ main {
 @media screen and (max-width: 500px) {
   .aboutMe p:last-of-type {
     width: 90%;
+  }
+  .presentationContent h1 {
+    word-spacing: 0.6rem;
+    width: 90%;
+    margin: 1rem auto;
   }
 }

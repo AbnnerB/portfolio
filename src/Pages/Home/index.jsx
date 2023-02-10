@@ -1,12 +1,14 @@
 import { useRef } from "react";
 
-import HeaderFooter from "../../Components/HeaderFooter";
+import Footer from "../../Components/Footer";
 import ProjectCard from "../../Components/ProjectCard";
 import InfoProjects from "../../Data/InfoProjects";
 
 import "./styles.css";
 
-import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
+import { FaAngleRight, FaAngleLeft, FaUnderline } from "react-icons/fa";
+
+import TypeWriterEffect from "react-typewriter-effect";
 
 export default function Home() {
   const carousel = useRef(null);
@@ -26,15 +28,14 @@ export default function Home() {
         <section className="presentation">
           <div className="presentationContent">
             <h1>
-              Seja Bem-vindo! <br /> Eu sou o Abnner Borges.
+              <TypeWriterEffect
+                startDelay={1500}
+                cursorColor="rgb(22, 22, 22)"
+                text="Seja Bem-vindo!, Eu Sou o Abnner Borges."
+                typeSpeed={110}
+                eraseSpeed={100}
+              />
             </h1>
-            <p>
-              Bom o meu nome você já sabe, então da uma olhada na seção{" "}
-              <a className="linkSections" href="#about">
-                SOBRE
-              </a>{" "}
-              e eu vou te contar um pouco da minha história.
-            </p>
           </div>
           <div>
             <span className="myNameDivImg">abnnerborges</span>
@@ -54,12 +55,12 @@ export default function Home() {
             possibilidades.
           </p>
           <p>
-            Especificamente na area do Front-end, onde iniciei os meus estudos
+            Especificamente na área do Front-end, onde iniciei os meus estudos
             em HTML, CSS, JS e React-JS, que sigo estudando até os dias de hoje.
           </p>
           <p>
-            Apesar da pouca experiência me fascino a cada desafio, sempre
-            buscando aprender e contribuir, gerando valor aos usuarios dos meus
+            Enquanto prossigo nessa jornada me fascino a cada desafio, sempre
+            buscando aprender e contribuir, gerando valor aos usuários dos meus
             projetos.
           </p>
           <p>
@@ -79,7 +80,7 @@ export default function Home() {
         <section className="projects">
           <h3>Projetos</h3>
 
-          <section className="containerProjects">
+          {/* <section className="containerProjects">
             <button onClick={carouselScrollRight}>
               <FaAngleRight />
             </button>
@@ -91,11 +92,17 @@ export default function Home() {
                 <ProjectCard key={item.id} item={item} />
               ))}
             </div>
+          </section> */}
+
+          <section className="containerProjects">
+            {InfoProjects.map((item) => (
+              <ProjectCard key={item.id} item={item} />
+            ))}
           </section>
         </section>
       </main>
       <footer>
-        <HeaderFooter />
+        <Footer />
       </footer>
     </div>
   );
