@@ -6,7 +6,7 @@ import "./styles.css";
 export default function HeaderFooter() {
   return (
     <header>
-      <span>abnnerborges</span>
+      <span>abnnerBorges</span>
       <nav>
         <a
           href="https://github.com/AbnnerB"
