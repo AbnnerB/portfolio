@@ -44,6 +44,14 @@ const InfoProjects = [
     linkVercel: "https://todo-list-abnnerb.vercel.app/",
     moreInfo: `Uma simples lista de tarefas com funções de adicionar, marcar como feito e excluir.`,
   },
+  {
+    id: "5",
+    name: "Todo-list Plus",
+    src1: "assets/TodoList1.png",
+    technologiesUsed: "HTML, CSS, JS, REACT",
+    linkVercel: "https://todo-list-pluss.vercel.app/",
+    moreInfo: `Nesta lista de Tarefas temos uma função a mais, que é a pagina de detalhes de cada tarefa criada pelo usuário, podendo adicionar Titulos, Listas e parágrafos `,
+  },
 ];
 
 export default InfoProjects;

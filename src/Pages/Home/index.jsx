@@ -11,6 +11,8 @@ import { FaAngleRight, FaAngleLeft, FaUnderline } from "react-icons/fa";
 import TypeWriterEffect from "react-typewriter-effect";
 
 export default function Home() {
+  const dataTop5 = InfoProjects.slice(0, 5);
+
   const carousel = useRef(null);
 
   function carouselScrollLeft() {
@@ -95,10 +97,13 @@ export default function Home() {
           </section> */}
 
           <section className="containerProjects">
-            {InfoProjects.map((item) => (
+            {dataTop5.map((item) => (
               <ProjectCard key={item.id} item={item} />
             ))}
           </section>
+          <button className="seeMoreProjectsButton">
+            Ver mais Projetos ...
+          </button>
         </section>
       </main>
       <footer>
