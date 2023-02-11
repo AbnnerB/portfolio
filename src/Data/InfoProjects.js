@@ -2,7 +2,7 @@ const InfoProjects = [
   {
     id: "0",
     name: "Turismo Espacial",
-    src1: "assets/spaceTourism1.png",
+    src1: "assets/imgSpace/spaceTourism1.png",
     technologiesUsed: "HTML, CSS, JS, REACT",
     linkVercel: "https://space-tourism-abnnerb.vercel.app/",
     moreInfo: `
@@ -13,7 +13,7 @@ const InfoProjects = [
   {
     id: "1",
     name: "Gestor Financeiro",
-    src1: "assets/FinanceManager1.png",
+    src1: "assets/imgFinance/FinanceManager1.png",
     technologiesUsed: "HTML, CSS, JS, REACT",
     linkVercel: "https://gestor-financeiro-six.vercel.app/",
     moreInfo: `
@@ -23,7 +23,7 @@ const InfoProjects = [
   {
     id: "2",
     name: "Marcador",
-    src1: "assets/Marcador1.png",
+    src1: "assets/imgMarker/Marcador1.png",
     technologiesUsed: "HTML, CSS, JS, REACT",
     linkVercel: "https://marcador-de-pontos.vercel.app/",
     moreInfo: `Um simples marcador de pontos, com algumas funcionalidade a mais, o usuario consegue personalizar seu card e as alterações ficam salvas no localStorage.`,
@@ -31,7 +31,7 @@ const InfoProjects = [
   {
     id: "3",
     name: "Assistente de Compras",
-    src1: "assets/shoppingAssistant1.png",
+    src1: "assets/imgShopAssistant/shoppingAssistant1.png",
     technologiesUsed: "HTML, CSS, JS, REACT",
     linkVercel: "https://assistente-de-compras.vercel.app/",
     moreInfo: `Este projeto tem o intuito de auxiliar o usuário com suas compras, o usario digita o nome de um produto, um valor e a quantidade deste produto. Com isso o assistente de compras gera uma linha em uma tabela e um total, o mesmo pode adicionar a quantidade de linhas que preferir.`,
@@ -39,7 +39,7 @@ const InfoProjects = [
   {
     id: "4",
     name: "Lista de Anotações",
-    src1: "assets/TodoList1.png",
+    src1: "assets/imgList/TodoList1.png",
     technologiesUsed: "HTML, CSS, JS, REACT",
     linkVercel: "https://todo-list-abnnerb.vercel.app/",
     moreInfo: `Uma simples lista de tarefas com funções de adicionar, marcar como feito e excluir.`,
