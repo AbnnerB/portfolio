@@ -21,10 +21,8 @@ export default function Details() {
     <>
       {infoArray.map((item) => (
         <div key={item.id} className="PageDetail">
-          <Footer />
-
-          <img src={"../" + item.src1} alt="{item.name} " />
           <h1>{item.name}</h1>
+          <img src={"../" + item.src1} alt="{item.name} " />
           <p>
             Tecnologias utilizadas para desenvolvimento do Projeto:{" "}
             {item.technologiesUsed}
@@ -41,6 +39,7 @@ export default function Details() {
           </a>
         </div>
       ))}
+      <Footer />
     </>
   );
 }
