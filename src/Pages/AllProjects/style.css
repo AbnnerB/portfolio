@@ -13,3 +13,21 @@
   justify-content: space-between;
   align-items: center;
 }
+
+@media screen and (max-width: 1012px) {
+  .pageAllProjects {
+    margin: 0 1rem;
+  }
+
+  .containerAllProjects {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .containerAllProjects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

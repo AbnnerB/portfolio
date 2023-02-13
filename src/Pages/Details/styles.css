@@ -23,6 +23,7 @@
   margin: 1rem 0;
   color: white;
   text-decoration-color: #0fff50;
+  width: 120px;
 }
 
 .containerCarousel {
@@ -73,4 +74,24 @@
 .carousel img {
   height: 300px;
   /* width: 40%; */
+}
+
+@media screen and (max-width: 1012px) {
+  .PageDetail {
+    margin: 0 1rem;
+  }
+
+  /* .containerAllProjects {
+    justify-content: center;
+  } */
+}
+
+@media screen and (max-width: 500px) {
+  .carousel img {
+    max-height: 200px;
+    width: 90%;
+  }
+  .containerCarousel button {
+    display: none;
+  }
 }

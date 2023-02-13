@@ -12,15 +12,16 @@ export default function AllProjects() {
   }, []);
 
   return (
-    <div className="pageAllProjects">
-      <h2>Projetos</h2>
-      <section className="containerAllProjects">
-        {InfoProjects.map((item) => (
-          <ProjectCard key={item.id} item={item} />
-        ))}
-      </section>
-
+    <>
+      <div className="pageAllProjects">
+        <h2>Projetos</h2>
+        <section className="containerAllProjects">
+          {InfoProjects.map((item) => (
+            <ProjectCard key={item.id} item={item} />
+          ))}
+        </section>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
