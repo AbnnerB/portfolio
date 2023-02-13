@@ -1,29 +1,17 @@
-import { useRef } from "react";
-
 import Footer from "../../Components/Footer";
 import ProjectCard from "../../Components/ProjectCard";
 import InfoProjects from "../../Data/InfoProjects";
 
 import "./styles.css";
 
-import { FaAngleRight, FaAngleLeft, FaUnderline } from "react-icons/fa";
+// import { FaAngleRight, FaAngleLeft, FaUnderline } from "react-icons/fa";
 
 import TypeWriterEffect from "react-typewriter-effect";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   const dataTop5 = InfoProjects.slice(0, 5);
 
-  const carousel = useRef(null);
-
-  function carouselScrollLeft() {
-    console.log(carousel.current);
-    carousel.current.scrollLeft -= carousel.current.offsetWidth;
-  }
-  function carouselScrollRight() {
-    console.log(carousel.current.offsetWidth);
-    carousel.current.scrollLeft += carousel.current.offsetWidth;
-  }
   const navigate = useNavigate();
 
   function linkForProjects() {
@@ -87,20 +75,6 @@ export default function Home() {
 
         <section className="projects">
           <h3>Projetos</h3>
-
-          {/* <section className="containerProjects">
-            <button onClick={carouselScrollRight}>
-              <FaAngleRight />
-            </button>
-            <button onClick={carouselScrollLeft}>
-              <FaAngleLeft />
-            </button>
-            <div className="carousel" ref={carousel}>
-              {InfoProjects.map((item) => (
-                <ProjectCard key={item.id} item={item} />
-              ))}
-            </div>
-          </section> */}
 
           <section className="containerProjects">
             {dataTop5.map((item) => (

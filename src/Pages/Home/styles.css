@@ -103,43 +103,6 @@ main {
   font-size: 2rem;
 }
 
-/* .containerProjects {
-  margin: 2rem 0;
-  position: relative;
-}
-.containerProjects button {
-  position: absolute;
-  height: 82.3%;
-  background-color: rgba(0, 0, 0, 0.356);
-  padding: 0 0.2rem;
-  border: none;
-  color: white;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-.containerProjects button:first-child {
-  position: absolute;
-  right: 0px;
-}
-.containerProjects button svg {
-  transition: all 0.5s;
-}
-
-.containerProjects button svg:hover {
-  transform: scale(1.4);
-}
-
-.carousel {
-  display: flex;
-  gap: 0.7rem;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-}
-.carousel::-webkit-scrollbar {
-  display: none;
-} */
-
 .containerProjects {
   margin: 2rem 0;
   display: grid;
