@@ -58,8 +58,6 @@ const InfoProjects = [
     name: "Lista de Anotações",
     src1: "assets/imgList/TodoList1.png",
     src2: "assets/imgList/TodoList2.png",
-    // src3: "assets/imgList/TodoList1.png",
-    // src4: "assets/imgList/TodoList1.png",
     technologiesUsed: "HTML, CSS, JS, REACT",
     linkVercel: "https://todo-list-abnnerb.vercel.app/",
     linkGitHub: "https://github.com/AbnnerB/todo-list",

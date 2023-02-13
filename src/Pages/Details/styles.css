@@ -1,6 +1,6 @@
 .PageDetail {
   max-width: 1012px;
-  margin: 0 auto;
+  margin: 0 auto 2rem auto;
 
   display: flex;
   flex-direction: column;
@@ -20,15 +20,13 @@
 }
 
 .PageDetail a {
-  margin: 1rem 0;
+  margin: 1rem 0 0 0;
   color: white;
   text-decoration-color: #0fff50;
   width: 120px;
 }
 
 .containerCarousel {
-  /* margin: 2rem 0; */
-  /* height: 500px; */
   position: relative;
 }
 .containerCarousel button {
@@ -51,7 +49,6 @@
   left: 0px;
   top: 0px;
   bottom: 0px;
-  /* display: none; */
 }
 .containerCarousel button svg {
   transition: all 0.5s;
@@ -73,17 +70,12 @@
 
 .carousel img {
   height: 300px;
-  /* width: 40%; */
 }
 
 @media screen and (max-width: 1012px) {
   .PageDetail {
     margin: 0 1rem;
   }
-
-  /* .containerAllProjects {
-    justify-content: center;
-  } */
 }
 
 @media screen and (max-width: 500px) {

@@ -7,7 +7,6 @@ main {
   border-bottom: 1px solid rgb(223, 223, 223);
   position: relative;
   display: flex;
-  /* justify-content: space-between; */
   gap: 2.5rem;
 }
 
@@ -110,7 +109,6 @@ main {
   gap: 1.5rem;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #0fff50; */
 }
 
 .projectCard {

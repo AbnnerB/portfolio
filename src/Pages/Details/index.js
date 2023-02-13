@@ -21,32 +21,14 @@ export default function Details() {
   const carousel = useRef(null);
 
   function carouselScrollLeft() {
-    // console.log(carousel.current);
-    console.log(carousel.current.offsetWidth);
-
     carousel.current.scrollLeft -= carousel.current.offsetWidth;
   }
   function carouselScrollRight() {
-    console.log(carousel.current.offsetWidth);
     carousel.current.scrollLeft += carousel.current.offsetWidth;
   }
 
   return (
     <>
-      {/* <section className="containerProjects">
-            <button onClick={carouselScrollRight}>
-              <FaAngleRight />
-            </button>
-            <button onClick={carouselScrollLeft}>
-              <FaAngleLeft />
-            </button>
-            <div className="carousel" ref={carousel}>
-              {InfoProjects.map((item) => (
-                <ProjectCard key={item.id} item={item} />
-              ))}
-            </div>
-          </section> */}
-
       {infoArray.map((item) => {
         const arrayImg = [
           item.src1,

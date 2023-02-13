@@ -4,8 +4,6 @@ import InfoProjects from "../../Data/InfoProjects";
 
 import "./styles.css";
 
-// import { FaAngleRight, FaAngleLeft, FaUnderline } from "react-icons/fa";
-
 import TypeWriterEffect from "react-typewriter-effect";
 import { useNavigate } from "react-router-dom";
 
