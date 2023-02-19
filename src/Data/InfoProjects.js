@@ -124,6 +124,16 @@ const InfoProjects = [
     linkGitHub: "https://github.com/AbnnerB/pokemon-api",
     moreInfo: `Este projeto se trata do consumo de uma api referente a um desenho, contem tambem uma pagina unica de detalhes com mais informações sobre o personagem selecionado. `,
   },
+  {
+    id: "10",
+    name: "Summary Results",
+    src1: "assets/imgSummaryResult/summary1.png",
+    src2: "assets/imgSummaryResult/summary2.png",
+    technologiesUsed: "HTML,css TS, REACT ",
+    linkVercel: "https://summary-results.vercel.app/",
+    linkGitHub: "https://github.com/AbnnerB/summary-results",
+    moreInfo: `Este projeto é mais simples sem muitas funcionalidades, vi ele no site do fron-end Mentor e resolvi fazer para praticar TypeScript, mas do TypeScript acabei utilizando somente interface `,
+  },
 ];
 
 export default InfoProjects;
