@@ -129,10 +129,22 @@ const InfoProjects = [
     name: "Summary Results",
     src1: "assets/imgSummaryResult/summary1.png",
     src2: "assets/imgSummaryResult/summary2.png",
-    technologiesUsed: "HTML,css TS, REACT ",
+    technologiesUsed: "HTML,css, TS, REACT ",
     linkVercel: "https://summary-results.vercel.app/",
     linkGitHub: "https://github.com/AbnnerB/summary-results",
     moreInfo: `Este projeto é mais simples sem muitas funcionalidades, vi ele no site do fron-end Mentor e resolvi fazer para praticar TypeScript, mas do TypeScript acabei utilizando somente interface `,
+  },
+  {
+    id: "11",
+    name: "Desafio 5em5 Finanças ",
+    src1: "assets/imgBoniekyFinancas/f1.png",
+    src2: "assets/imgBoniekyFinancas/f2.png",
+    src3: "assets/imgBoniekyFinancas/f3.png",
+    src4: "assets/imgBoniekyFinancas/f4.png",
+    technologiesUsed: "HTML,styled-components, TS, REACT ",
+    linkVercel: "https://bonieky-sistema-financas.vercel.app/",
+    linkGitHub: "https://github.com/AbnnerB/bonieky-sistema-financas",
+    moreInfo: `Este projeto é de um canal do youtube, fiz este projeto somente com o intuito de praticar typeScript `,
   },
 ];
 
