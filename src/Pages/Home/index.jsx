@@ -44,18 +44,28 @@ export default function Home() {
         <section className="aboutMe" id="about">
           <h2>Sobre</h2>
           <p>
-            Em 2022 iniciei os meus estudos na área da programação e desde o meu
-            primeiro "Hello World" sou um apaixonado por esse mundo de infinitas
-            possibilidades.
+            Em 2022, decidi seguir minha paixão pela programação e mergulhar
+            fundo nesse universo fascinante. Desde o meu primeiro "Hello World",
+            fiquei maravilhado com a possibilidade de criar algo do zero usando
+            apenas linhas de código.
           </p>
           <p>
-            Especificamente na área do Front-end, onde iniciei os meus estudos
-            em HTML, CSS, JS e React-JS, que sigo estudando até os dias de hoje.
+            Como desenvolvedor Front-end, aprofundei meus estudos em HTML, CSS,
+            JavaScript e React-JS. Aprendi não só a criar interfaces visualmente
+            atraentes, mas também a escrever um código limpo, organizado e
+            escalável.
           </p>
           <p>
-            Enquanto prossigo nessa jornada me fascino a cada desafio, sempre
-            buscando aprender e contribuir, gerando valor aos usuários dos meus
-            projetos.
+            Além disso, descobri a importância de manter-me atualizado com as
+            tendências e tecnologias mais recentes. Participei de cursos,
+            desenvolvi projetos, sempre em busca de aprimoramento e novos
+            conhecimentos.
+          </p>
+          <p>
+            Cada novo desafio que enfrento é uma oportunidade de crescimento, e
+            a possibilidade de contribuir para soluções inovadoras e impactantes
+            é o que me mantém apaixonado pela programação. Estou animado para
+            continuar aprendendo e evoluindo nessa jornada emocionante.
           </p>
           <p>
             Inclusive acesse os projetos abaixo e se possivel me envie um
