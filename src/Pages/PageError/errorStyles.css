@@ -1,0 +1,13 @@
+.pageError {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  gap: 1rem;
+  font-size: 1.3rem;
+}
+.pageError a {
+  color: #0fff50;
+}
