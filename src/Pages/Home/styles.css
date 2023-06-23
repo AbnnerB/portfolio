@@ -110,6 +110,22 @@ main {
   justify-content: space-between;
   align-items: center;
 }
+.titleTech {
+  font-size: 2rem;
+  margin: 4rem 0 2rem 0;
+}
+
+.containerTech {
+  padding: 0 0.9rem;
+  max-width: 600px;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.containerTech img {
+  max-width: 70px;
+}
 
 .projectCard {
   min-width: 300px;
@@ -196,6 +212,9 @@ main {
     text-align: center;
     margin-bottom: 0px;
   }
+  .titleTech {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 760px) {
   .presentationContent h1 {
@@ -242,7 +261,8 @@ main {
     max-width: 200px;
   }
 
-  .containerProjects {
+  .containerProjects,
+  .containerTech {
     justify-content: center;
   }
 }

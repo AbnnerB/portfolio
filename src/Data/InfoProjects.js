@@ -157,7 +157,7 @@ const InfoProjects = [
     src6: "assets/imgBorgesNotepad/6.png",
     src7: "assets/imgBorgesNotepad/7.png",
     src8: "assets/imgBorgesNotepad/8.png",
-    technologiesUsed: "HTML,tailwind, TS, REACT, firebase",
+    technologiesUsed: "HTML, Tailwind-Css, TS, Next.js, Firebase",
     linkVercel: "",
     linkGitHub: "",
     moreInfo: `O BORGES NOTEPAD é um bloco de notas pessoal com quatro páginas privadas, sendo duas delas dinâmicas. Uma das páginas é dedicada a anotações, proporcionando uma experiência de lista de tarefas. Com a página dinâmica de anotações, posso adicionar detalhes separados por títulos, parágrafos e listas, o que me ajuda a organizar as informações de maneira mais eficiente.

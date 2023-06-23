@@ -1,6 +1,9 @@
 import Footer from "../../Components/Footer";
 import ProjectCard from "../../Components/ProjectCard";
+
 import InfoProjects from "../../Data/InfoProjects";
+
+import InfoTech from "../../Data/tech";
 
 import "./styles.css";
 
@@ -9,6 +12,8 @@ import { useNavigate } from "react-router-dom";
 
 export default function Home() {
   const dataTop5 = InfoProjects.slice(0, 5);
+
+  const techonlogies = InfoTech;
 
   const navigate = useNavigate();
 
@@ -101,6 +106,21 @@ export default function Home() {
           >
             <span> Ver mais Projetos ...</span>
           </button>
+        </section>
+
+        <section>
+          <h2 className="titleTech">Tecnologias</h2>
+
+          <div className="containerTech">
+            {techonlogies.map((item) => (
+              <img
+                key={item.nameTech}
+                src={item.img}
+                alt={item.nameTech}
+                title={item.nameTech}
+              />
+            ))}
+          </div>
         </section>
       </main>
       <footer>
