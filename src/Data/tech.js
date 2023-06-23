@@ -20,6 +20,10 @@ const InfoTech = [
     nameTech: "typescript",
   },
   {
+    img: "assets/technologies/styledcomponents.svg",
+    nameTech: "styled-components",
+  },
+  {
     img: "assets/technologies/nextjs.svg",
     nameTech: "next-js",
   },
