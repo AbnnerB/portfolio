@@ -146,6 +146,25 @@ const InfoProjects = [
     linkGitHub: "https://github.com/AbnnerB/bonieky-sistema-financas",
     moreInfo: `Este projeto é de um canal do youtube, fiz este projeto somente com o intuito de praticar typeScript `,
   },
+  {
+    id: "12",
+    name: "Borges NotePad",
+    src1: "assets/imgBorgesNotepad/1.png",
+    src2: "assets/imgBorgesNotepad/2.png",
+    src3: "assets/imgBorgesNotepad/3.png",
+    src4: "assets/imgBorgesNotepad/4.png",
+    src5: "assets/imgBorgesNotepad/5.png",
+    src6: "assets/imgBorgesNotepad/6.png",
+    src7: "assets/imgBorgesNotepad/7.png",
+    src8: "assets/imgBorgesNotepad/8.png",
+    technologiesUsed: "HTML,tailwind, TS, REACT, firebase",
+    linkVercel: "",
+    linkGitHub: "",
+    moreInfo: `O BORGES NOTEPAD é um bloco de notas pessoal com quatro páginas privadas, sendo duas delas dinâmicas. Uma das páginas é dedicada a anotações, proporcionando uma experiência de lista de tarefas. Com a página dinâmica de anotações, posso adicionar detalhes separados por títulos, parágrafos e listas, o que me ajuda a organizar as informações de maneira mais eficiente.
+    Além disso, o BORGES NOTEPAD possui uma página financeira que permite criar itens com informações mensais. Dentro da página dinâmica de cada item, é possível fazer um balanço financeiro, registrando entradas e saídas de valores.
+    Este projeto é uma combinação de dois projetos anteriores que desenvolvi: o Gestor Financeiro e o Todo-list Plus. Dessa vez, decidi utilizar Tailwind CSS e Next.js, o que trouxe mais flexibilidade e eficiência ao desenvolvimento.
+    `,
+  },
 ];
 
 export default InfoProjects;

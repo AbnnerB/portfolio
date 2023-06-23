@@ -38,6 +38,8 @@ export default function Details() {
           item.src5,
           item.src6,
           item.src7,
+          item.src8,
+          item.src9,
         ];
         const arrayImgFilter = arrayImg.filter((img) => img !== undefined);
 
@@ -73,13 +75,17 @@ export default function Details() {
             </p>
             <p>{item.moreInfo}</p>
 
-            <a href={item.linkVercel} target="_blank" rel="noreferrer">
-              Veja no site
-            </a>
+            {item.linkVercel !== "" && (
+              <a href={item.linkVercel} target="_blank" rel="noreferrer">
+                Veja no site
+              </a>
+            )}
 
-            <a href={item.linkGitHub} target="_blank" rel="noreferrer">
-              Veja no gitHub
-            </a>
+            {item.linkVercel !== "" && (
+              <a href={item.linkGitHub} target="_blank" rel="noreferrer">
+                Veja no gitHub
+              </a>
+            )}
           </div>
         );
       })}
